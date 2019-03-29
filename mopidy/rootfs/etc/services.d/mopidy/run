@@ -1,0 +1,19 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Community Hass.io Add-ons: Mopidy
+# Runs the Mopidy
+# ==============================================================================
+declare -a options
+
+bashio::log.info "Starting Mopidy..."
+
+for var in $(bashio::config 'settings|keys'); do
+    name=$(bashio::config "settings[${var}].name")
+    value=$(bashio::config "settings[${var}].value")
+    bashio::log.info "Setting ${name} to ${value}"
+
+    options+=(-o "${name}=${value}")
+done
+
+# Run Mopidy
+exec mopidy --config /etc/mopidy/mopidy.conf "${options[@]}"
