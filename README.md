@@ -21,7 +21,9 @@ Mopidy is an extensible music server.
 
 ## About
 
-Mopidy plays music from local disk, Spotify, SoundCloud, Google Play Music, and more. You edit the playlist from any phone, tablet, or computer using a range of MPD and web clients.
+Mopidy plays music from local disk, Spotify, SoundCloud, Google Play Music,
+and more. You edit the playlist from any phone, tablet, or computer using a
+range of MPD and web clients.
 
 ## Installation
 
@@ -239,7 +241,6 @@ SOFTWARE.
 [patreon]: https://www.patreon.com/
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [python-packages]: https://pypi.org
-[python-packages]: https://pypi.org/
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-mopidy.svg
 [releases]: https://github.com/hassio-addons/addon-mopidy/releases
