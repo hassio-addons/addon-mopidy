@@ -32,7 +32,7 @@ RUN \
         gstreamer1.0-pulseaudio=1.14.1-1ubuntu1~ubuntu18.04.1 \
         libffi-dev=3.2.1-8 \
         libxml2-dev=2.9.4+dfsg1-6.1ubuntu1.2 \
-        libxslt1-dev=1.1.29-5 \
+        libxslt1-dev=1.1.29-5ubuntu0.1 \
         mopidy-alsamixer=1.0.3-3 \
         mopidy-local-sqlite=1.0.0-2 \
         mopidy-spotify-tunigo=1.0.0-0mopidy1 \
