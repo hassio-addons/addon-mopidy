@@ -1,3 +1,3 @@
 Mopidy-GMusic==3.0.0
-Mopidy-Iris==3.37.0
+Mopidy-Iris==3.37.1
 Mopidy-SoundCloud==2.1.0
