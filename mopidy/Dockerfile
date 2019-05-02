@@ -27,7 +27,7 @@ RUN \
     \
     && apt-get install -y --no-install-recommends \
         build-essential=12.4ubuntu1 \
-        gstreamer1.0-alsa=1.14.1-1ubuntu1~ubuntu18.04.1 \
+        gstreamer1.0-alsa=1.14.1-1ubuntu1~ubuntu18.04.2 \
         gstreamer1.0-plugins-bad=1.14.1-1ubuntu1~ubuntu18.04.1 \
         gstreamer1.0-pulseaudio=1.14.1-1ubuntu1~ubuntu18.04.1 \
         libffi-dev=3.2.1-8 \
