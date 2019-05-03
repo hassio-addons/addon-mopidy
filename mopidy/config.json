@@ -8,7 +8,6 @@
   "webui": "http://[HOST]:[PORT:80]/iris/",
   "ingress": true,
   "ingress_port": 1337,
-  "ingress_entry": "/iris/queue",
   "startup": "application",
   "arch": [
     "amd64",
