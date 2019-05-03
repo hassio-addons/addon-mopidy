@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base:3.0.0
+ARG BUILD_FROM=hassioaddons/ubuntu-base:3.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -68,9 +68,13 @@ RUN \
     \
     && find /tmp/ -mindepth 1  -delete \
     && rm -fr \
+        /etc/nginx \
         /var/{cache,log}/* \
         /var/lib/apt/lists/* \
-        /root/.cache
+        /root/.cache \
+    \
+    && mkdir -p /var/log/nginx \
+    && touch /var/log/nginx/error.log
 
 # Copy root filesystem
 COPY rootfs /

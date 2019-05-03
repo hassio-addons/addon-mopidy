@@ -6,23 +6,13 @@
 declare -a options
 
 # Wait for Mopidy to become available
-s6-svwait -u -t 5000 /var/run/s6/services/mopidy
-timeout 15 \
-    bash -c \
-        'until echo > /dev/tcp/localhost/4478 ; do sleep 0.5; done' \
-            > /dev/null 2>&1
+bashio::net.wait_for 4478
 
 bashio::log.info "Starting NGinx..."
 
 # Disable HA Authentication if front door is open
 if bashio::config.true 'leave_front_door_open'; then
     export DISABLE_HA_AUTHENTICATION=true
-fi
-
-options+=(-g "daemon off;")
-
-if bashio::config.true 'ssl'; then
-    options+=(-c /etc/nginx/nginx-ssl.conf)
 fi
 
 exec nginx "${options[@]}"
