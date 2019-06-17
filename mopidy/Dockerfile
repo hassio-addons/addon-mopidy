@@ -13,6 +13,8 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
+        libssl1.1=1.1.1-1ubuntu2.1~18.04.2 \
+    && apt-get install -y --no-install-recommends \
         dirmngr=2.2.4-1ubuntu1.2 \
         gpg-agent=2.2.4-1ubuntu1.2 \
         gpg=2.2.4-1ubuntu1.2 \
