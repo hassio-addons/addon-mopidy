@@ -37,6 +37,8 @@ comparison to installing any other Hass.io add-on.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
+**NOTE**: If it is not listed there, you can find it under:
+`https://github.com/hassio-addons/repository-edge`
 
 ## Configuration
 
