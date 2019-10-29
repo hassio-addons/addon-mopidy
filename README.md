@@ -127,7 +127,7 @@ only exposed to your internal network. USE AT YOUR OWN RISK!_
 It is possible to embed mopidy directly into Home Assistant, allowing
 you to access your mopidy through the Home Assistant frontend.
 
-Home Assistant provides the `panel_iframe` component, for these purposes.
+Home Assistant provides the `panel_iframe` integration, for these purposes.
 
 Example configuration:
 
