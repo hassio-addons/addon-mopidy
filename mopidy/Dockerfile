@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base:4.0.3
+ARG BUILD_FROM=hassioaddons/debian-base:2.0.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -45,10 +45,10 @@ RUN \
     && curl https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip3 install --no-cache-dir -r /tmp/requirements.txt \
     \
-    && find /usr/local/lib/python3.6/ -type d -name tests -depth -exec rm -rf {} \; \
-    && find /usr/local/lib/python3.6/ -type d -name test -depth -exec rm -rf {} \; \
-    && find /usr/local/lib/python3.6/ -name __pycache__ -depth -exec rm -rf {} \; \
-    && find /usr/local/lib/python3.6/ -name "*.pyc" -depth -exec rm -f {} \; \
+    && find /usr/local/lib/python3.7/ -type d -name tests -depth -exec rm -rf {} \; \
+    && find /usr/local/lib/python3.7/ -type d -name test -depth -exec rm -rf {} \; \
+    && find /usr/local/lib/python3.7/ -name __pycache__ -depth -exec rm -rf {} \; \
+    && find /usr/local/lib/python3.7/ -name "*.pyc" -depth -exec rm -f {} \; \
     \
     && apt-get purge -y --auto-remove \
         dirmngr \
