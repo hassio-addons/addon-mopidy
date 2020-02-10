@@ -10,6 +10,6 @@ variables:
   ADDON_ARMHF: "false"
   ADDON_AARCH64: "false"
 
-  ADDON_AMD64_BASE: "hassioaddons/debian-base-amd64:2.0.1"
-  ADDON_ARMV7_BASE: "hassioaddons/debian-base-armv7:2.0.1"
-  ADDON_I386_BASE: "hassioaddons/debian-base-i386:2.0.1"
+  ADDON_AMD64_BASE: "hassioaddons/debian-base-amd64:3.0.0"
+  ADDON_ARMV7_BASE: "hassioaddons/debian-base-armv7:3.0.0"
+  ADDON_I386_BASE: "hassioaddons/debian-base-i386:3.0.0"
