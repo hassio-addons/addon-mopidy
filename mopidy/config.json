@@ -10,11 +10,7 @@
   "ingress_port": 1337,
   "ingress_entry": "iris/",
   "startup": "application",
-  "arch": [
-    "amd64",
-    "armv7",
-    "i386"
-  ],
+  "arch": ["amd64"],
   "boot": "auto",
   "hassio_api": true,
   "auth_api": true,
@@ -30,11 +26,7 @@
     "5555/udp": "Autoaudiosink",
     "80/tcp": "Web interface (Not required for Ingress)"
   },
-  "map": [
-    "config",
-    "share:rw",
-    "ssl"
-  ],
+  "map": ["config", "share:rw", "ssl"],
   "options": {
     "system_packages": [],
     "python_packages": [],
