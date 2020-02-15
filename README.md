@@ -11,9 +11,9 @@
 [![Discord][discord-shield]][discord]
 [![Community Forum][forum-shield]][forum]
 
-[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
+[![Sponsor Frenck via GitHub Sponsors][github-sponsors-shield]][github-sponsors]
 
-[![Support my work on Patreon][patreon-shield]][patreon]
+[![Support Frenck on Patreon][patreon-shield]][patreon]
 
 ![HADashboard screenshot](images/screenshot.png)
 
@@ -218,8 +218,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 [brammittendorff]: https://github.com/brammittendorff
-[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
-[buymeacoffee]: https://www.buymeacoffee.com/frenck
+[github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
+[github-sponsors]: https://github.com/sponsors/frenck
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-mopidy.svg
 [commits]: https://github.com/hassio-addons/addon-mopidy/commits/master
 [contributors]: https://github.com/hassio-addons/addon-mopidy/graphs/contributors
@@ -237,8 +237,8 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-mopidy.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
 [mjrider]: https://github.com/mjrider
-[patreon-shield]: https://www.frenck.nl/images/patreon.png
-[patreon]: https://www.patreon.com/
+[patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
+[patreon]: https://www.patreon.com/frenck
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [python-packages]: https://pypi.org
 [reddit]: https://reddit.com/r/homeassistant
