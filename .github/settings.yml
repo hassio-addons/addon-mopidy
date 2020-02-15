@@ -1,8 +1,8 @@
 ---
 repository:
-  description: "Mopidy - Community Hass.io Add-on for Home Assistant"
+  description: "Mopidy - Home Assistant Community Add-ons"
   homepage: https://addons.community
-  topics: music-player, mopidy, python, hassio-addons, hassio, hass, home-assistant, homeassistant
+  topics: music-player, mopidy, addon, addons, home-assistant, homeassistant
   private: false
   has_issues: true
   has_projects: false

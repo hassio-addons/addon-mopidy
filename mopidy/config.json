@@ -28,7 +28,7 @@
   "ports_description": {
     "6600/tcp": "Mopidy",
     "5555/udp": "Autoaudiosink",
-    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
+    "80/tcp": "Web interface (Not required for Ingress)"
   },
   "map": [
     "config",
