@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/ubuntu-base:3.1.2
+ARG BUILD_FROM=hassioaddons/debian-base:3.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -13,14 +13,13 @@ RUN \
     apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        libssl1.1=1.1.1-1ubuntu2.1~18.04.2 \
-    && apt-get install -y --no-install-recommends \
-        dirmngr=2.2.4-1ubuntu1.2 \
-        gpg-agent=2.2.4-1ubuntu1.2 \
-        gpg=2.2.4-1ubuntu1.2 \
-        libnginx-mod-http-lua=1.14.0-0ubuntu1.2 \
-        luarocks=2.4.2+dfsg-1 \
-        nginx=1.14.0-0ubuntu1.2 \
+        dirmngr \
+        gpg-agent \
+        gpg \
+        libnginx-mod-http-lua \
+        luarocks \
+        nginx \
+        git \
     \
     && curl -L https://apt.mopidy.com/mopidy.gpg | apt-key add - \
     && curl -L https://apt.mopidy.com/mopidy.list -o /etc/apt/sources.list.d/mopidy.list \
@@ -28,55 +27,56 @@ RUN \
     && apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        build-essential=12.4ubuntu1 \
-        gstreamer1.0-alsa=1.14.1-1ubuntu1~ubuntu18.04.2 \
-        gstreamer1.0-plugins-bad=1.14.1-1ubuntu1~ubuntu18.04.1 \
-        gstreamer1.0-pulseaudio=1.14.1-1ubuntu1~ubuntu18.04.1 \
-        libffi-dev=3.2.1-8 \
-        libxml2-dev=2.9.4+dfsg1-6.1ubuntu1.2 \
-        libxslt1-dev=1.1.29-5ubuntu0.1 \
-        mopidy-alsamixer=1.0.3-3 \
-        mopidy-local-sqlite=1.0.0-2 \
-        mopidy-spotify-tunigo=1.0.0-0mopidy1 \
-        mopidy-spotify=3.1.0-0mopidy1 \
-        mopidy=2.2.2-1 \
-        python-dev=2.7.15~rc1-1 \
-        zlib1g-dev=1:1.2.11.dfsg-0ubuntu2 \
-    \
-    && luarocks install lua-resty-http 0.13-0 \
-    \
-    && curl https://bootstrap.pypa.io/get-pip.py | python \
-    && pip install --no-cache-dir -r /tmp/requirements.txt \
-    \
-    && find /usr/local/lib/python2.7/ -type d -name tests -depth -exec rm -rf {} \; \
-    && find /usr/local/lib/python2.7/ -type d -name test -depth -exec rm -rf {} \; \
-    && find /usr/local/lib/python2.7/ -name __pycache__ -depth -exec rm -rf {} \; \
-    && find /usr/local/lib/python2.7/ -name "*.pyc" -depth -exec rm -f {} \; \
-    \
-    && apt-get purge -y --auto-remove \
-        build-essential \
-        dirmngr \
-        dpkg-dev \
-        gcc \
-        gcc-7 \
-        gpg \
-        gpg-agent \
         libffi-dev \
         libxml2-dev \
         libxslt1-dev \
-        luarocks \
-        python-dev \
+        libasound2-dev \
+        libspotify12 \
+        libspotify-dev \
         zlib1g-dev \
+        build-essential \
+        python3-dev \
+        python3-gi \
+        python3-gst-1.0 \
+        gstreamer1.0-alsa \
+        gstreamer1.0-plugins-bad \
+        gstreamer1.0-plugins-good \
+        gstreamer1.0-plugins-ugly \
+        gstreamer1.0-pulseaudio \
     \
-    && find /tmp/ -mindepth 1  -delete \
+    && luarocks install lua-resty-http 0.13-0 \
+    \
+    && curl https://bootstrap.pypa.io/get-pip.py | python3 \
+    && pip3 install --no-cache-dir -r /tmp/requirements.txt \
+    \
+    && find /usr/local/lib/python3.7/ -type d -name tests -depth -exec rm -rf {} \; \
+    && find /usr/local/lib/python3.7/ -type d -name test -depth -exec rm -rf {} \; \
+    && find /usr/local/lib/python3.7/ -name __pycache__ -depth -exec rm -rf {} \; \
+    && find /usr/local/lib/python3.7/ -name "*.pyc" -depth -exec rm -f {} \; \
+    \
+    && apt-get purge -y --auto-remove \
+        dirmngr \
+        gpg-agent \
+        gpg \
+        git \
+        libffi-dev \
+        libxml2-dev \
+        libxslt1-dev \
+        zlib1g-dev \
+        build-essential \
+        gcc \
+        python-dev \
+        dpkg-dev \
+        gcc-7 \
+        luarocks \
     && rm -fr \
-        /etc/nginx \
         /var/{cache,log}/* \
         /var/lib/apt/lists/* \
         /root/.cache \
-    \
-    && mkdir -p /var/log/nginx \
-    && touch /var/log/nginx/error.log
+    && find /tmp/ -mindepth 1  -delete
+
+# Move access.log to stdout and error.log to stderr
+RUN mkdir -p /var/log/nginx && ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
 # Copy root filesystem
 COPY rootfs /
