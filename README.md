@@ -44,45 +44,26 @@ comparison to installing any other Home Assistant add-on.
 
 Example add-on configuration:
 
-```json
-{
-  "settings": [
-    {
-      "name": "soundcloud/auth_token",
-      "value": "1-1111-1111-11eeaswdf23"
-    },
-    {
-      "name": "spotify/username",
-      "value": "your@email.com"
-    },
-    {
-      "name": "spotify/password",
-      "value": "thesupersecretpassword"
-    },
-    {
-      "name": "spotify/client_id",
-      "value": "spotify-client-id"
-    },
-    {
-      "name": "spotify/client_secret",
-      "value": "spotify-client-secret="
-    },
-    {
-      "name": "gmusic/username",
-      "value": "username"
-    },
-    {
-      "name": "gmusic/password",
-      "value": "thesupersecretpassword"
-    },
-    {
-      "name": "gmusic/deviceid",
-      "value": "yodeviceid"
-    }
-  ],
-  "system_packages": [],
-  "python_packages": []
-}
+```yaml
+settings:
+  - name: soundcloud/auth_token
+    value: 1-1111-1111-11eeaswdf23
+  - name: spotify/username
+    value: your@email.com
+  - name: spotify/password
+    value: thesupersecretpassword
+  - name: spotify/client_id
+    value: spotify-client-id
+  - name: spotify/client_secret
+    value: spotify-client-secret=
+  - name: gmusic/username
+    value: username
+  - name: gmusic/password
+    value: thesupersecretpassword
+  - name: gmusic/deviceid
+    value: yodeviceid
+system_packages: []
+python_packages: []
 ```
 
 ### Option: `settings`
