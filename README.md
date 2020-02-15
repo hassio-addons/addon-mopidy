@@ -30,13 +30,11 @@ range of MPD and web clients.
 The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Home Assistant add-on.
 
-1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
+1. Search for the "Mopidy" add-on in the Home Assistant add-on store
+   and install it.
 1. Install the "Mopidy" add-on.
-1. Start the "Mopidy" add-on
+1. Start the "Mopidy" add-on.
 1. Check the logs of the "Mopidy" add-on to see if everything went well.
-
-**NOTE**: Do not add this repository to Hass.io, please use:
-`https://github.com/hassio-addons/repository`.
 
 ## Configuration
 
