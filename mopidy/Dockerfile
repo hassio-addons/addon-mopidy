@@ -65,9 +65,7 @@ RUN \
         zlib1g-dev \
         build-essential \
         gcc \
-        python3-dev \
-        python3-gi \
-        python3-gst-1.0 \
+        python-dev \
         dpkg-dev \
         gcc-7 \
         luarocks \
