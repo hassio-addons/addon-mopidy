@@ -44,7 +44,7 @@ RUN \
         gstreamer1.0-plugins-ugly=1.14.4-1 \
         gstreamer1.0-pulseaudio=1.14.4-1 \
     \
-    && luarocks install lua-resty-http 0.13-0 \
+    && luarocks install lua-resty-http 0.15-0 \
     \
     && curl https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip3 install --no-cache-dir -r /tmp/requirements.txt \
