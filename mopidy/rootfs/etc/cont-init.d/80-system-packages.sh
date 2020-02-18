@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Mopidy
+# Home Assistant Community Add-on: Mopidy
 # Install user configured/requested packages
 # ==============================================================================
 if bashio::config.has_value 'system_packages'; then

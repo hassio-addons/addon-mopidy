@@ -1,6 +1,6 @@
 #!/usr/bin/execlineb -S0
 # ==============================================================================
-# Community Hass.io Add-ons: Mopidy
+# Home Assistant Community Add-on: Mopidy
 # Take down the S6 supervision tree when Mopidy fails
 # ==============================================================================
 if -n { s6-test $# -ne 0 }

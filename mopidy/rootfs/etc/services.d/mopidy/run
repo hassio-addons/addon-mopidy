@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Mopidy
+# Home Assistant Community Add-on: Mopidy
 # Runs the Mopidy
 # ==============================================================================
 declare -a options

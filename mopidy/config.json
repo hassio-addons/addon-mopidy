@@ -10,11 +10,7 @@
   "ingress_port": 1337,
   "ingress_entry": "iris/",
   "startup": "application",
-  "arch": [
-    "amd64",
-    "armv7",
-    "i386"
-  ],
+  "arch": ["amd64"],
   "boot": "auto",
   "hassio_api": true,
   "auth_api": true,
@@ -28,20 +24,16 @@
   "ports_description": {
     "6600/tcp": "Mopidy",
     "5555/udp": "Autoaudiosink",
-    "80/tcp": "Web interface (Not required for Hass.io Ingress)"
+    "80/tcp": "Web interface (Not required for Ingress)"
   },
-  "map": [
-    "config",
-    "share:rw",
-    "ssl"
-  ],
+  "map": ["config", "share:rw", "ssl"],
   "options": {
     "system_packages": [],
     "python_packages": [],
     "settings": []
   },
   "schema": {
-    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
+    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "system_packages": ["str"],
     "python_packages": ["str"],
     "settings": [
