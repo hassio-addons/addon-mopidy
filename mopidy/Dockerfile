@@ -27,22 +27,22 @@ RUN \
     && apt-get update \
     \
     && apt-get install -y --no-install-recommends \
-        libffi-dev \
-        libxml2-dev \
-        libxslt1-dev \
-        libasound2-dev \
-        libspotify12 \
-        libspotify-dev \
-        zlib1g-dev \
-        build-essential \
-        python3-dev \
-        python3-gi \
-        python3-gst-1.0 \
-        gstreamer1.0-alsa \
-        gstreamer1.0-plugins-bad \
-        gstreamer1.0-plugins-good \
-        gstreamer1.0-plugins-ugly \
-        gstreamer1.0-pulseaudio \
+        libffi-dev=3.2.1-9 \
+        libxml2-dev=2.9.4+dfsg1-7+b3 \
+        libxslt1-dev=1.1.32-2.2~deb10u1 \
+        libasound2-dev=1.1.8-1 \
+        libspotify12=12.1.51-1 \
+        libspotify-dev=12.1.51-1 \
+        zlib1g-dev=1:1.2.11.dfsg-1 \
+        build-essential=12.6 \
+        python3-dev=3.7.3-1 \
+        python3-gi=3.30.4-1 \
+        python3-gst-1.0=1.14.4-1+b1 \
+        gstreamer1.0-alsa=1.14.4-2 \
+        gstreamer1.0-plugins-bad=1.14.4-1+b1 \
+        gstreamer1.0-plugins-good=1.14.4-1 \
+        gstreamer1.0-plugins-ugly=1.14.4-1 \
+        gstreamer1.0-pulseaudio=1.14.4-1 \
     \
     && luarocks install lua-resty-http 0.13-0 \
     \
@@ -65,7 +65,9 @@ RUN \
         zlib1g-dev \
         build-essential \
         gcc \
-        python-dev \
+        python3-dev \
+        python3-gi \
+        python3-gst-1.0 \
         dpkg-dev \
         gcc-7 \
         luarocks \
