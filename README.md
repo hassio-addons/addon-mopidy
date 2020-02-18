@@ -21,7 +21,7 @@ Mopidy is an extensible music server.
 
 ## About
 
-Mopidy plays music from local disk, Spotify, SoundCloud, Google Play Music,
+Mopidy plays music from local disk, Youtube, Spotify, SoundCloud, Google Play Music,
 and more. You edit the playlist from any phone, tablet, or computer using a
 range of MPD and web clients.
 
@@ -60,6 +60,12 @@ settings:
     value: thesupersecretpassword
   - name: gmusic/deviceid
     value: yodeviceid
+  - name: youtube/enabled
+    value: 'true'
+  - name: file/enabled
+    value: 'true'
+  - name: file/media_dirs
+    value: /share/mopidy/media
 system_packages: []
 python_packages: []
 ```
@@ -100,23 +106,6 @@ authentication on the VSCode by setting it to `true`.
 
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
-
-## Embedding into Home Assistant
-
-It is possible to embed mopidy directly into Home Assistant, allowing
-you to access your mopidy through the Home Assistant frontend.
-
-Home Assistant provides the `panel_iframe` integration, for these purposes.
-
-Example configuration:
-
-```yaml
-panel_iframe:
-  mopidy:
-    title: Mopidy
-    icon: mdi:music
-    url: http://address.to.your.hass.io:6680/iris/
-```
 
 ## Changelog & Releases
 
