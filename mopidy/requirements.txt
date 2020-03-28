@@ -7,3 +7,4 @@ Mopidy-Iris==3.46.0
 Mopidy-SoundCloud==3.0.0
 Mopidy-GMusic==4.0.0
 Mopidy-Youtube==3.0
+Mopidy-MPD==3.0.0
