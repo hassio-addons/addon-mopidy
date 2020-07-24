@@ -6,5 +6,5 @@ Mopidy-Spotify==4.0.1
 Mopidy-Iris==3.50.0
 Mopidy-SoundCloud==3.0.0
 Mopidy-GMusic==4.0.0
-Mopidy-Youtube==3.0
+Mopidy-Youtube==3.1
 Mopidy-MPD==3.0.0
