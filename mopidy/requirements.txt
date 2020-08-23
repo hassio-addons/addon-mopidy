@@ -3,7 +3,7 @@ Pykka==2.0.2
 Mopidy-Local==3.1.1
 Mopidy-AlsaMixer==2.0.0
 Mopidy-Spotify==4.0.1
-Mopidy-Iris==3.52.1
+Mopidy-Iris==3.52.2
 Mopidy-SoundCloud==3.0.0
 Mopidy-GMusic==4.0.0
 Mopidy-Youtube==3.1
