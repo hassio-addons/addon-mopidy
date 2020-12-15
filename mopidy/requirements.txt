@@ -4,7 +4,7 @@ Mopidy-Local==3.1.1
 Mopidy-AlsaMixer==2.0.1
 Mopidy-Spotify==4.1.0
 Mopidy-Iris==3.55.4
-Mopidy-SoundCloud==3.0.0
+Mopidy-SoundCloud==3.0.1
 Mopidy-GMusic==4.0.1
 Mopidy-Youtube==3.1
 Mopidy-MPD==3.1.0
