@@ -81,7 +81,7 @@ for the add-on._
 ### Option: `leave_front_door_open`
 
 Adding this option to the add-on configuration allows you to disable
-authentication on the VSCode by setting it to `true`.
+authentication on the Mopidy by setting it to `true`.
 
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
