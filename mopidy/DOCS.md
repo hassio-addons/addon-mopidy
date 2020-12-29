@@ -64,8 +64,7 @@ documentation:
 
 ### Option: `system_packages`
 
-Allows you to specify additional [Ubuntu packages][ubuntu-packages] to be
-installed in your shell environment (e.g., Python, PHP, Go).
+Allows you to specify additional [Debian packages][debian-packages] to be installed in your shell environment (e.g., Python, PHP, Go).
 
 **Note**: _Adding many packages will result in a longer start-up
 time for the add-on._
