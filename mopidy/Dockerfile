@@ -18,7 +18,7 @@ RUN \
         gpg=2.2.12-1+deb10u1 \
         libnginx-mod-http-lua=1.14.2-2+deb10u3 \
         luarocks=2.4.2+dfsg-1 \
-        nginx=1.14.2-2+deb10u1 \
+        nginx=1.14.2-2+deb10u3 \
         git=1:2.20.1-2+deb10u3 \
     \
     && curl -L https://apt.mopidy.com/mopidy.gpg | apt-key add - \
