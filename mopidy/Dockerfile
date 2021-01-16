@@ -16,9 +16,9 @@ RUN \
         dirmngr=2.2.12-1+deb10u1 \
         gpg-agent=2.2.12-1+deb10u1 \
         gpg=2.2.12-1+deb10u1 \
-        libnginx-mod-http-lua=1.14.2-2+deb10u1 \
+        libnginx-mod-http-lua=1.14.2-2+deb10u3 \
         luarocks=2.4.2+dfsg-1 \
-        nginx=1.14.2-2+deb10u1 \
+        nginx=1.14.2-2+deb10u3 \
         git=1:2.20.1-2+deb10u3 \
     \
     && curl -L https://apt.mopidy.com/mopidy.gpg | apt-key add - \
@@ -28,7 +28,7 @@ RUN \
     \
     && apt-get install -y --no-install-recommends \
         libffi-dev=3.2.1-9 \
-        libxml2-dev=2.9.4+dfsg1-7+b3 \
+        libxml2-dev=2.9.4+dfsg1-7+deb10u \
         libxslt1-dev=1.1.32-2.2~deb10u1 \
         libasound2-dev=1.1.8-1 \
         libspotify12=12.1.51-1 \
