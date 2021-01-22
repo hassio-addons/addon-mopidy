@@ -9,12 +9,9 @@
   "ingress": true,
   "ingress_port": 1337,
   "ingress_entry": "iris/",
-  "startup": "application",
   "arch": ["amd64"],
-  "boot": "auto",
   "hassio_api": true,
   "auth_api": true,
-  "hassio_role": "default",
   "audio": true,
   "ports": {
     "6600/tcp": 6600,

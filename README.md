@@ -4,7 +4,7 @@
 ![Project Stage][project-stage-shield]
 [![License][license-shield]](LICENSE.md)
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -74,19 +74,19 @@ SOFTWARE.
 
 [brammittendorff]: https://github.com/brammittendorff
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-mopidy.svg
-[commits]: https://github.com/hassio-addons/addon-mopidy/commits/master
+[commits]: https://github.com/hassio-addons/addon-mopidy/commits/main
 [contributors]: https://github.com/hassio-addons/addon-mopidy/graphs/contributors
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-mopidy/blob/master/mopidy/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-mopidy/blob/main/mopidy/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/?u=frenck
 [frenck]: https://github.com/frenck
+[github-actions-shield]: https://github.com/hassio-addons/addon-mopidy/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-mopidy/actions
 [github-sponsors-shield]: https://frenck.dev/wp-content/uploads/2019/12/github_sponsor.png
 [github-sponsors]: https://github.com/sponsors/frenck
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-mopidy/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-mopidy/pipelines
 [issue]: https://github.com/hassio-addons/addon-mopidy/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-mopidy.svg
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
