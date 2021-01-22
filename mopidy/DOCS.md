@@ -89,8 +89,7 @@ only exposed to your internal network. USE AT YOUR OWN RISK!_
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
@@ -155,7 +154,6 @@ SOFTWARE.
 [forum]: https://community.home-assistant.io/?u=frenck
 [frenck]: https://github.com/frenck
 [issue]: https://github.com/hassio-addons/addon-mopidy/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
 [mjrider]: https://github.com/mjrider
 [python-packages]: https://pypi.org
 [reddit]: https://reddit.com/r/homeassistant
