@@ -40,9 +40,9 @@ settings:
   - name: gmusic/deviceid
     value: yodeviceid
   - name: youtube/enabled
-    value: 'true'
+    value: "true"
   - name: file/enabled
-    value: 'true'
+    value: "true"
   - name: file/media_dirs
     value: /share/mopidy/media
 system_packages: []
@@ -93,12 +93,12 @@ functionality. The format of the log is based on
 [Keep a Changelog][keepchangelog].
 
 Releases are based on [Semantic Versioning][semver], and use the format
-of ``MAJOR.MINOR.PATCH``. In a nutshell, the version will be incremented
+of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
 based on the following:
 
-- ``MAJOR``: Incompatible or major changes.
-- ``MINOR``: Backwards-compatible new features and enhancements.
-- ``PATCH``: Backwards-compatible bugfixes and package updates.
+- `MAJOR`: Incompatible or major changes.
+- `MINOR`: Backwards-compatible new features and enhancements.
+- `PATCH`: Backwards-compatible bugfixes and package updates.
 
 ## Support
 
