@@ -6,10 +6,8 @@
   "description": "Mopidy is an extensible music server",
   "url": "https://github.com/hassio-addons/addon-mopidy",
   "ingress": true,
-  "ingress_port": 1337,
   "ingress_entry": "iris/",
   "arch": ["amd64"],
-  "hassio_api": true,
   "auth_api": true,
   "audio": true,
   "ports": {
