@@ -16,8 +16,6 @@ RUN \
         dirmngr=2.2.12-1+deb10u1 \
         gpg-agent=2.2.12-1+deb10u1 \
         gpg=2.2.12-1+deb10u1 \
-        libnginx-mod-http-lua=1.14.2-2+deb10u3 \
-        luarocks=2.4.2+dfsg-1 \
         nginx=1.14.2-2+deb10u3 \
         git=1:2.20.1-2+deb10u3 \
     \
@@ -44,8 +42,6 @@ RUN \
         gstreamer1.0-plugins-ugly=1.14.4-1 \
         gstreamer1.0-pulseaudio=1.14.4-1 \
     \
-    && luarocks install lua-resty-http 0.15-0 \
-    \
     && curl https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip3 install --no-cache-dir -r /tmp/requirements.txt \
     \
@@ -68,7 +64,6 @@ RUN \
         python-dev \
         dpkg-dev \
         gcc-7 \
-        luarocks \
     && rm -fr \
         /var/{cache,log}/* \
         /var/lib/apt/lists/* \
