@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/debian-base:3.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:4.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -39,7 +39,7 @@ RUN \
         python3-gi=3.30.4-1 \
         python3-gst-1.0=1.14.4-1+b1 \
         gstreamer1.0-alsa=1.14.4-2 \
-        gstreamer1.0-plugins-bad=1.14.4-1+b1 \
+        gstreamer1.0-plugins-bad=1.14.4-1+deb10u1 \
         gstreamer1.0-plugins-good=1.14.4-1 \
         gstreamer1.0-plugins-ugly=1.14.4-1 \
         gstreamer1.0-pulseaudio=1.14.4-1 \
