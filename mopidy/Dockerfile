@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:4.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:4.2.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -16,7 +16,7 @@ RUN \
         dirmngr=2.2.12-1+deb10u1 \
         gpg-agent=2.2.12-1+deb10u1 \
         gpg=2.2.12-1+deb10u1 \
-        nginx=1.14.2-2+deb10u3 \
+        nginx=1.14.2-2+deb10u4 \
         git=1:2.20.1-2+deb10u3 \
     \
     && curl -L https://apt.mopidy.com/mopidy.gpg | apt-key add - \
