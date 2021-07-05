@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:4.2.1
+ARG BUILD_FROM=ghcr.io/hassio-addons/debian-base/amd64:4.2.2
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -26,7 +26,7 @@ RUN \
     \
     && apt-get install -y --no-install-recommends \
         libffi-dev=3.2.1-9 \
-        libxml2-dev=2.9.4+dfsg1-7+deb10u1 \
+        libxml2-dev=2.9.4+dfsg1-7+deb10u2 \
         libxslt1-dev=1.1.32-2.2~deb10u1 \
         libasound2-dev=1.1.8-1 \
         libspotify12=12.1.51-1 \
@@ -36,11 +36,11 @@ RUN \
         python3-dev=3.7.3-1 \
         python3-gi=3.30.4-1 \
         python3-gst-1.0=1.14.4-1+b1 \
-        gstreamer1.0-alsa=1.14.4-2 \
+        gstreamer1.0-alsa=1.14.4-2+deb10u1 \
         gstreamer1.0-plugins-bad=1.14.4-1+deb10u2 \
-        gstreamer1.0-plugins-good=1.14.4-1 \
-        gstreamer1.0-plugins-ugly=1.14.4-1 \
-        gstreamer1.0-pulseaudio=1.14.4-1 \
+        gstreamer1.0-plugins-good=1.14.4-1+deb10u1 \
+        gstreamer1.0-plugins-ugly=1.14.4-1+deb10u1 \
+        gstreamer1.0-pulseaudio=1.14.4-1+deb10u1 \
     \
     && curl https://bootstrap.pypa.io/get-pip.py | python3 \
     && pip3 install --no-cache-dir -r /tmp/requirements.txt \
