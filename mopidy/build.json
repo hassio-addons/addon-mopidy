@@ -1,5 +1,0 @@
-{
-  "build_from": {
-    "amd64": "ghcr.io/hassio-addons/debian-base/amd64:4.2.2"
-  }
-}
