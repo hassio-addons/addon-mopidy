@@ -52,7 +52,7 @@ check [the contributor's page][contributors].
 
 MIT License
 
-Copyright (c) 2019-2021 Bram Mittendorff, Franck Nijhof, Robbert Müller
+Copyright (c) 2019-2022 Bram Mittendorff, Franck Nijhof, Robbert Müller
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -89,7 +89,7 @@ SOFTWARE.
 [github-sponsors]: https://github.com/sponsors/frenck
 [issue]: https://github.com/hassio-addons/addon-mopidy/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-mopidy.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
 [mjrider]: https://github.com/mjrider
 [patreon-shield]: https://frenck.dev/wp-content/uploads/2019/12/patreon.png
 [patreon]: https://www.patreon.com/frenck
