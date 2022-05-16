@@ -1,4 +1,4 @@
-Mopidy==3.2.0
+Mopidy==3.3.0
 Pykka==3.0.2
 Mopidy-Local==3.2.1
 Mopidy-AlsaMixer==2.0.1
