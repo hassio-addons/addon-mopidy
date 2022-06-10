@@ -5,9 +5,11 @@ slug: mopidy
 panel_icon: mdi:music-circle
 description: Mopidy is an extensible music server
 url: https://github.com/hassio-addons/addon-mopidy
+codenotary: codenotary@frenck.dev
 ingress: true
 ingress_entry: iris/
 ingress_stream: true
+init: false
 arch:
   - amd64
 auth_api: true
