@@ -1,10 +1,4 @@
-Mopidy==3.3.0
-Pykka==3.1.1
-Mopidy-Local==3.2.1
-Mopidy-AlsaMixer==2.0.1
 Mopidy-Spotify==4.1.1
 Mopidy-Iris==3.63.0
-Mopidy-SoundCloud==3.0.1
 Mopidy-GMusic==4.0.1
 Mopidy-Youtube==3.5
-Mopidy-MPD==3.3.0
