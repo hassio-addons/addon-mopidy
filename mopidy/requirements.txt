@@ -1,4 +1,4 @@
 Mopidy-Spotify==4.1.1
-Mopidy-Iris==3.64.1
+Mopidy-Iris==3.65.0
 Mopidy-GMusic==4.0.1
 Mopidy-Youtube==3.6.1
